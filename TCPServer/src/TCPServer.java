@@ -9,7 +9,7 @@ public class TCPServer {
         String clientSentence;
         boolean flag = true;
 
-        ServerSocket welcomeSocket = new ServerSocket(5444);
+        ServerSocket welcomeSocket = new ServerSocket(6666);
 
         while (flag) {
             Socket connectionSocket = welcomeSocket.accept();

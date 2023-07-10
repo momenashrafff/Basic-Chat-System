@@ -13,7 +13,7 @@ public class TCPClient {
         final String[] sentence = new String[1];
         final String[] modifiedSentence = new String[1];
 
-        Socket clientSocket = new Socket(serverIP, 5444);
+        Socket clientSocket = new Socket(serverIP, 6666);
         DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
         BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
