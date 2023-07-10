@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/NetworkProject.iml" filepath="$PROJECT_DIR$/.idea/NetworkProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCPClient/TCPClient.iml" filepath="$PROJECT_DIR$/TCPClient/TCPClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCPServer/TCPServer.iml" filepath="$PROJECT_DIR$/TCPServer/TCPServer.iml" />
+    </modules>
+  </component>
+</project>
