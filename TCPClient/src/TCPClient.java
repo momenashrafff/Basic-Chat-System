@@ -5,12 +5,15 @@ import java.net.Socket;
 
 public class TCPClient {
     public static void main(String[] args) throws Exception {
+        BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter the server IP address: ");
+        String serverIP = inFromUser.readLine();
+
         final String[] sentence = new String[1];
         final String[] modifiedSentence = new String[1];
 
-        BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
-
-        Socket clientSocket = new Socket("172.20.10.3", 5444);
+        Socket clientSocket = new Socket(serverIP, 5444);
         DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
         BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
